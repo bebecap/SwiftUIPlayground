@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64CB1D8624165A8C003E66F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB1D8524165A8C003E66F6 /* AppDelegate.swift */; };
+		64CB1D8824165A8C003E66F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB1D8724165A8C003E66F6 /* SceneDelegate.swift */; };
+		64CB1D8A24165A8C003E66F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB1D8924165A8C003E66F6 /* ContentView.swift */; };
+		64CB1D8C24165A8F003E66F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64CB1D8B24165A8F003E66F6 /* Assets.xcassets */; };
+		64CB1D8F24165A8F003E66F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64CB1D8E24165A8F003E66F6 /* Preview Assets.xcassets */; };
+		64CB1D9224165A8F003E66F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CB1D9024165A8F003E66F6 /* LaunchScreen.storyboard */; };
+		64CB1D9A24165B1B003E66F6 /* VehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB1D9924165B1B003E66F6 /* VehicleView.swift */; };
+		64CB1D9D24167A99003E66F6 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB1D9C24167A99003E66F6 /* Style.swift */; };
+		64CB1D9F24167D1D003E66F6 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB1D9E24167D1D003E66F6 /* Vehicle.swift */; };
+		64CB1DA324168208003E66F6 /* VehicleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB1DA224168208003E66F6 /* VehicleController.swift */; };
+		64CB1DA5241683D0003E66F6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64CB1DA4241683D0003E66F6 /* Alamofire.framework */; };
+		64CB1DA9241684D0003E66F6 /* input.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 64CB1DA8241684CF003E66F6 /* input.xcfilelist */; };
+		64CB1DAB241684FA003E66F6 /* output.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 64CB1DAA241684FA003E66F6 /* output.xcfilelist */; };
+		64CB1DAE241686F3003E66F6 /* VehiclesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB1DAD241686F3003E66F6 /* VehiclesViewModel.swift */; };
+		64CB1DB024168714003E66F6 /* VehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB1DAF24168714003E66F6 /* VehicleViewModel.swift */; };
+		64CB1DB22416872F003E66F6 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB1DB12416872F003E66F6 /* RootViewModel.swift */; };
+		64CB1DB624168F57003E66F6 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB1DB524168F57003E66F6 /* ActivityIndicator.swift */; };
+		64CB1DF42416963E003E66F6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CB1DF22416963E003E66F6 /* Interface.storyboard */; };
+		64CB1DF624169640003E66F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64CB1DF524169640003E66F6 /* Assets.xcassets */; };
+		64CB1DFD24169640003E66F6 /* WatchVehicles Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 64CB1DFC24169640003E66F6 /* WatchVehicles Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		64CB1E0224169640003E66F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB1E0124169640003E66F6 /* ContentView.swift */; };
+		64CB1E0424169640003E66F6 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB1E0324169640003E66F6 /* HostingController.swift */; };
+		64CB1E0624169640003E66F6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB1E0524169640003E66F6 /* ExtensionDelegate.swift */; };
+		64CB1E0824169641003E66F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64CB1E0724169641003E66F6 /* Assets.xcassets */; };
+		64CB1E0B24169641003E66F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64CB1E0A24169641003E66F6 /* Preview Assets.xcassets */; };
+		64CB1E0F24169641003E66F6 /* WatchVehicles.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 64CB1DF02416963E003E66F6 /* WatchVehicles.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		64CB1E182416967C003E66F6 /* VehiclesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB1DAD241686F3003E66F6 /* VehiclesViewModel.swift */; };
+		64CB1E192416967C003E66F6 /* VehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB1DAF24168714003E66F6 /* VehicleViewModel.swift */; };
+		64CB1E1A2416967C003E66F6 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB1DB12416872F003E66F6 /* RootViewModel.swift */; };
+		64CB1E1B2416967C003E66F6 /* VehicleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB1DA224168208003E66F6 /* VehicleController.swift */; };
+		64CB1E1C2416967C003E66F6 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB1D9E24167D1D003E66F6 /* Vehicle.swift */; };
+		64CB1E1D2416967C003E66F6 /* VehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB1D9924165B1B003E66F6 /* VehicleView.swift */; };
+		64CB1E1E2416967C003E66F6 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB1D9C24167A99003E66F6 /* Style.swift */; };
+		64CB1E22241697D3003E66F6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64CB1E21241697D3003E66F6 /* Alamofire.framework */; };
+		64CB1E23241697D3003E66F6 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 64CB1E21241697D3003E66F6 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64CB1DFE24169640003E66F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64CB1D7A24165A8C003E66F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64CB1DFB24169640003E66F6;
+			remoteInfo = "WatchVehicles Extension";
+		};
+		64CB1E0D24169641003E66F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64CB1D7A24165A8C003E66F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64CB1DEF2416963E003E66F6;
+			remoteInfo = WatchVehicles;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		64CB1E1024169641003E66F6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				64CB1E0F24169641003E66F6 /* WatchVehicles.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64CB1E1324169641003E66F6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				64CB1DFD24169640003E66F6 /* WatchVehicles Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64CB1E24241697D3003E66F6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				64CB1E23241697D3003E66F6 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		64CB1D8224165A8C003E66F6 /* swift-ui-tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-ui-tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64CB1D8524165A8C003E66F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		64CB1D8724165A8C003E66F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		64CB1D8924165A8C003E66F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		64CB1D8B24165A8F003E66F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64CB1D8E24165A8F003E66F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		64CB1D9124165A8F003E66F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		64CB1D9324165A8F003E66F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64CB1D9924165B1B003E66F6 /* VehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleView.swift; sourceTree = "<group>"; };
+		64CB1D9C24167A99003E66F6 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		64CB1D9E24167D1D003E66F6 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		64CB1DA224168208003E66F6 /* VehicleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleController.swift; sourceTree = "<group>"; };
+		64CB1DA4241683D0003E66F6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "swift-ui-tests/Frameworks/Alamofire.framework"; sourceTree = SOURCE_ROOT; };
+		64CB1DA8241684CF003E66F6 /* input.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = input.xcfilelist; sourceTree = "<group>"; };
+		64CB1DAA241684FA003E66F6 /* output.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = output.xcfilelist; sourceTree = "<group>"; };
+		64CB1DAD241686F3003E66F6 /* VehiclesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewModel.swift; sourceTree = "<group>"; };
+		64CB1DAF24168714003E66F6 /* VehicleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewModel.swift; sourceTree = "<group>"; };
+		64CB1DB12416872F003E66F6 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		64CB1DB524168F57003E66F6 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		64CB1DF02416963E003E66F6 /* WatchVehicles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchVehicles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64CB1DF32416963E003E66F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		64CB1DF524169640003E66F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64CB1DF724169640003E66F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64CB1DFC24169640003E66F6 /* WatchVehicles Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchVehicles Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64CB1E0124169640003E66F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		64CB1E0324169640003E66F6 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		64CB1E0524169640003E66F6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		64CB1E0724169641003E66F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64CB1E0A24169641003E66F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		64CB1E0C24169641003E66F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64CB1E21241697D3003E66F6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/watchOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64CB1D7F24165A8C003E66F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64CB1DA5241683D0003E66F6 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64CB1DF924169640003E66F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64CB1E22241697D3003E66F6 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64CB1D7924165A8C003E66F6 = {
+			isa = PBXGroup;
+			children = (
+				64CB1D8424165A8C003E66F6 /* swift-ui-tests */,
+				64CB1DF12416963E003E66F6 /* WatchVehicles */,
+				64CB1E0024169640003E66F6 /* WatchVehicles Extension */,
+				64CB1DA6241683D6003E66F6 /* Frameworks */,
+				64CB1D8324165A8C003E66F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64CB1D8324165A8C003E66F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64CB1D8224165A8C003E66F6 /* swift-ui-tests.app */,
+				64CB1DF02416963E003E66F6 /* WatchVehicles.app */,
+				64CB1DFC24169640003E66F6 /* WatchVehicles Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64CB1D8424165A8C003E66F6 /* swift-ui-tests */ = {
+			isa = PBXGroup;
+			children = (
+				64CB1DAC241686C3003E66F6 /* ViewModel */,
+				64CB1DA1241681ED003E66F6 /* Service */,
+				64CB1DA024167D20003E66F6 /* Model */,
+				64CB1D9B24167A8C003E66F6 /* Views */,
+				64CB1D8524165A8C003E66F6 /* AppDelegate.swift */,
+				64CB1D8724165A8C003E66F6 /* SceneDelegate.swift */,
+				64CB1D8B24165A8F003E66F6 /* Assets.xcassets */,
+				64CB1D9024165A8F003E66F6 /* LaunchScreen.storyboard */,
+				64CB1D9324165A8F003E66F6 /* Info.plist */,
+				64CB1D8D24165A8F003E66F6 /* Preview Content */,
+				64CB1DA8241684CF003E66F6 /* input.xcfilelist */,
+				64CB1DAA241684FA003E66F6 /* output.xcfilelist */,
+			);
+			path = "swift-ui-tests";
+			sourceTree = "<group>";
+		};
+		64CB1D8D24165A8F003E66F6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				64CB1D8E24165A8F003E66F6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		64CB1D9B24167A8C003E66F6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				64CB1D8924165A8C003E66F6 /* ContentView.swift */,
+				64CB1D9924165B1B003E66F6 /* VehicleView.swift */,
+				64CB1D9C24167A99003E66F6 /* Style.swift */,
+				64CB1DB524168F57003E66F6 /* ActivityIndicator.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		64CB1DA024167D20003E66F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				64CB1D9E24167D1D003E66F6 /* Vehicle.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64CB1DA1241681ED003E66F6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				64CB1DA224168208003E66F6 /* VehicleController.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		64CB1DA6241683D6003E66F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64CB1E21241697D3003E66F6 /* Alamofire.framework */,
+				64CB1DA4241683D0003E66F6 /* Alamofire.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		64CB1DAC241686C3003E66F6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				64CB1DAD241686F3003E66F6 /* VehiclesViewModel.swift */,
+				64CB1DAF24168714003E66F6 /* VehicleViewModel.swift */,
+				64CB1DB12416872F003E66F6 /* RootViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		64CB1DF12416963E003E66F6 /* WatchVehicles */ = {
+			isa = PBXGroup;
+			children = (
+				64CB1DF22416963E003E66F6 /* Interface.storyboard */,
+				64CB1DF524169640003E66F6 /* Assets.xcassets */,
+				64CB1DF724169640003E66F6 /* Info.plist */,
+			);
+			path = WatchVehicles;
+			sourceTree = "<group>";
+		};
+		64CB1E0024169640003E66F6 /* WatchVehicles Extension */ = {
+			isa = PBXGroup;
+			children = (
+				64CB1E0124169640003E66F6 /* ContentView.swift */,
+				64CB1E0324169640003E66F6 /* HostingController.swift */,
+				64CB1E0524169640003E66F6 /* ExtensionDelegate.swift */,
+				64CB1E0724169641003E66F6 /* Assets.xcassets */,
+				64CB1E0C24169641003E66F6 /* Info.plist */,
+				64CB1E0924169641003E66F6 /* Preview Content */,
+			);
+			path = "WatchVehicles Extension";
+			sourceTree = "<group>";
+		};
+		64CB1E0924169641003E66F6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				64CB1E0A24169641003E66F6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64CB1D8124165A8C003E66F6 /* swift-ui-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64CB1D9624165A8F003E66F6 /* Build configuration list for PBXNativeTarget "swift-ui-tests" */;
+			buildPhases = (
+				64CB1D7E24165A8C003E66F6 /* Sources */,
+				64CB1D7F24165A8C003E66F6 /* Frameworks */,
+				64CB1D8024165A8C003E66F6 /* Resources */,
+				64CB1DA724168404003E66F6 /* ShellScript */,
+				64CB1E1024169641003E66F6 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64CB1E0E24169641003E66F6 /* PBXTargetDependency */,
+			);
+			name = "swift-ui-tests";
+			productName = "swift-ui-tests";
+			productReference = 64CB1D8224165A8C003E66F6 /* swift-ui-tests.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64CB1DEF2416963E003E66F6 /* WatchVehicles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64CB1E1724169641003E66F6 /* Build configuration list for PBXNativeTarget "WatchVehicles" */;
+			buildPhases = (
+				64CB1DEE2416963E003E66F6 /* Resources */,
+				64CB1E1324169641003E66F6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64CB1DFF24169640003E66F6 /* PBXTargetDependency */,
+			);
+			name = WatchVehicles;
+			productName = WatchVehicles;
+			productReference = 64CB1DF02416963E003E66F6 /* WatchVehicles.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		64CB1DFB24169640003E66F6 /* WatchVehicles Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64CB1E1624169641003E66F6 /* Build configuration list for PBXNativeTarget "WatchVehicles Extension" */;
+			buildPhases = (
+				64CB1DF824169640003E66F6 /* Sources */,
+				64CB1DF924169640003E66F6 /* Frameworks */,
+				64CB1DFA24169640003E66F6 /* Resources */,
+				64CB1E2024169698003E66F6 /* ShellScript */,
+				64CB1E24241697D3003E66F6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchVehicles Extension";
+			productName = "WatchVehicles Extension";
+			productReference = 64CB1DFC24169640003E66F6 /* WatchVehicles Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64CB1D7A24165A8C003E66F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Volodymyr Grytsenko";
+				TargetAttributes = {
+					64CB1D8124165A8C003E66F6 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					64CB1DEF2416963E003E66F6 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					64CB1DFB24169640003E66F6 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 64CB1D7D24165A8C003E66F6 /* Build configuration list for PBXProject "swift-ui-tests" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64CB1D7924165A8C003E66F6;
+			productRefGroup = 64CB1D8324165A8C003E66F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64CB1D8124165A8C003E66F6 /* swift-ui-tests */,
+				64CB1DEF2416963E003E66F6 /* WatchVehicles */,
+				64CB1DFB24169640003E66F6 /* WatchVehicles Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64CB1D8024165A8C003E66F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64CB1D9224165A8F003E66F6 /* LaunchScreen.storyboard in Resources */,
+				64CB1DAB241684FA003E66F6 /* output.xcfilelist in Resources */,
+				64CB1DA9241684D0003E66F6 /* input.xcfilelist in Resources */,
+				64CB1D8F24165A8F003E66F6 /* Preview Assets.xcassets in Resources */,
+				64CB1D8C24165A8F003E66F6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64CB1DEE2416963E003E66F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64CB1DF624169640003E66F6 /* Assets.xcassets in Resources */,
+				64CB1DF42416963E003E66F6 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64CB1DFA24169640003E66F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64CB1E0B24169641003E66F6 /* Preview Assets.xcassets in Resources */,
+				64CB1E0824169641003E66F6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64CB1DA724168404003E66F6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+		64CB1E2024169698003E66F6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/watchOS/Alamofire.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64CB1D7E24165A8C003E66F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64CB1DB22416872F003E66F6 /* RootViewModel.swift in Sources */,
+				64CB1D9F24167D1D003E66F6 /* Vehicle.swift in Sources */,
+				64CB1DAE241686F3003E66F6 /* VehiclesViewModel.swift in Sources */,
+				64CB1D8624165A8C003E66F6 /* AppDelegate.swift in Sources */,
+				64CB1DA324168208003E66F6 /* VehicleController.swift in Sources */,
+				64CB1DB624168F57003E66F6 /* ActivityIndicator.swift in Sources */,
+				64CB1DB024168714003E66F6 /* VehicleViewModel.swift in Sources */,
+				64CB1D8824165A8C003E66F6 /* SceneDelegate.swift in Sources */,
+				64CB1D8A24165A8C003E66F6 /* ContentView.swift in Sources */,
+				64CB1D9A24165B1B003E66F6 /* VehicleView.swift in Sources */,
+				64CB1D9D24167A99003E66F6 /* Style.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64CB1DF824169640003E66F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64CB1E1C2416967C003E66F6 /* Vehicle.swift in Sources */,
+				64CB1E1D2416967C003E66F6 /* VehicleView.swift in Sources */,
+				64CB1E192416967C003E66F6 /* VehicleViewModel.swift in Sources */,
+				64CB1E0424169640003E66F6 /* HostingController.swift in Sources */,
+				64CB1E1B2416967C003E66F6 /* VehicleController.swift in Sources */,
+				64CB1E182416967C003E66F6 /* VehiclesViewModel.swift in Sources */,
+				64CB1E0224169640003E66F6 /* ContentView.swift in Sources */,
+				64CB1E1A2416967C003E66F6 /* RootViewModel.swift in Sources */,
+				64CB1E0624169640003E66F6 /* ExtensionDelegate.swift in Sources */,
+				64CB1E1E2416967C003E66F6 /* Style.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64CB1DFF24169640003E66F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64CB1DFB24169640003E66F6 /* WatchVehicles Extension */;
+			targetProxy = 64CB1DFE24169640003E66F6 /* PBXContainerItemProxy */;
+		};
+		64CB1E0E24169641003E66F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64CB1DEF2416963E003E66F6 /* WatchVehicles */;
+			targetProxy = 64CB1E0D24169641003E66F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64CB1D9024165A8F003E66F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64CB1D9124165A8F003E66F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		64CB1DF22416963E003E66F6 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64CB1DF32416963E003E66F6 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64CB1D9424165A8F003E66F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		64CB1D9524165A8F003E66F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64CB1D9724165A8F003E66F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"swift-ui-tests/Preview Content\"";
+				DEVELOPMENT_TEAM = DQ443L285P;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "swift-ui-tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sixt.swift-ui-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64CB1D9824165A8F003E66F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"swift-ui-tests/Preview Content\"";
+				DEVELOPMENT_TEAM = DQ443L285P;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "swift-ui-tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sixt.swift-ui-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		64CB1E1124169641003E66F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DQ443L285P;
+				IBSC_MODULE = WatchVehicles_Extension;
+				INFOPLIST_FILE = WatchVehicles/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sixt.swift-ui-tests.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		64CB1E1224169641003E66F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DQ443L285P;
+				IBSC_MODULE = WatchVehicles_Extension;
+				INFOPLIST_FILE = WatchVehicles/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sixt.swift-ui-tests.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		64CB1E1424169641003E66F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchVehicles Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = DQ443L285P;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = "WatchVehicles Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sixt.swift-ui-tests.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		64CB1E1524169641003E66F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchVehicles Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = DQ443L285P;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = "WatchVehicles Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sixt.swift-ui-tests.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64CB1D7D24165A8C003E66F6 /* Build configuration list for PBXProject "swift-ui-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64CB1D9424165A8F003E66F6 /* Debug */,
+				64CB1D9524165A8F003E66F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64CB1D9624165A8F003E66F6 /* Build configuration list for PBXNativeTarget "swift-ui-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64CB1D9724165A8F003E66F6 /* Debug */,
+				64CB1D9824165A8F003E66F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64CB1E1624169641003E66F6 /* Build configuration list for PBXNativeTarget "WatchVehicles Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64CB1E1424169641003E66F6 /* Debug */,
+				64CB1E1524169641003E66F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64CB1E1724169641003E66F6 /* Build configuration list for PBXNativeTarget "WatchVehicles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64CB1E1124169641003E66F6 /* Debug */,
+				64CB1E1224169641003E66F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64CB1D7A24165A8C003E66F6 /* Project object */;
+}
